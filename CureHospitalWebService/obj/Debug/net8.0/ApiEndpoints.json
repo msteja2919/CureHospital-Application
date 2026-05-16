@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "CureHospitalWebService.Controllers.HomeController",
+    "Method": "AddDoctorSpecialization",
+    "RelativePath": "api/Home/AddDoctorSpecialization",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "specializationCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "specializationDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CureHospitalWebService.Controllers.HomeController",
+    "Method": "FetchDoctorIDs",
+    "RelativePath": "api/Home/FetchDoctorIDs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "specializationCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CureHospitalWebService.Controllers.HomeController",
+    "Method": "RemoveSurgeryDetails",
+    "RelativePath": "api/Home/RemoveSurgeryDetails",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "surgeryDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CureHospitalWebService.Controllers.HomeController",
+    "Method": "UpdateSurgeryTime",
+    "RelativePath": "api/Home/UpdateSurgeryTime",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "surgery",
+        "Type": "CureHospitalDALCrossPlatform.Models.Surgery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
